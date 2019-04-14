@@ -1,0 +1,163 @@
+<div class="home-container">
+
+    <img src="../../assets/background-image.jpg" 
+         alt="background-image" 
+         id="background-image"/>
+
+    <div class="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" 
+           id="logo">
+          <img src="../../assets/logo.png" 
+               alt="logo" 
+               id="logo"/> 
+        </a>
+        <button class="navbar-toggler"
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" 
+             id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" 
+                 href="#" 
+                 id="careers"> Careers 
+                <span class="sr-only"> (current) </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" 
+                 href="#" 
+                 id="services"> Services
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+                 href="#" 
+                 id="navbarDropdown" 
+                 role="button"
+                 id="products" 
+                 data-toggle="dropdown" 
+                 aria-haspopup="true"
+                 aria-expanded="false"> Products
+              </a>
+              <div class="dropdown-menu"
+                   aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" 
+                   href="#"> Action
+                </a>
+                <a class="dropdown-item" 
+                   href="#">
+                   Another action
+                </a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item" 
+                   href="#">Something else here</a>
+              </div>
+            </li>-
+            <li class="nav-item">
+              <a class="nav-link disabled" 
+                 href="#" 
+                 tabindex="-1" 
+                 aria-disabled="true" 
+                 id="sigin"> Sigin
+              </a>
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0" 
+                id="search">
+            <input class="form-control mr-sm-2" 
+                   type="search" 
+                   placeholder="Search" 
+                   id="search-container" 
+                   aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" 
+                    type="submit">Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="slider">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+              <img src="../../assets/slider-one.jpg" 
+                   alt="hacker">
+              <div class="carousel-caption">
+                <h3 id="hacking-quotes"> Want to Know About Hacking </h3>
+                <p id="caption"> Reach out Us </p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img src="../../assets/slider-two.jpg" 
+                   alt="Random second slide">
+              <div class="carousel-caption">
+                <h3 id="hacking-quotes"as> Want to become a Ethical Hacker or Red Hat </h3>
+                <p id="caption"> Knows how many HACKERs are there.. ?? </p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img src="../../assets/slider-three.jpg" 
+                   alt="Random third slide">
+              <div class="carousel-caption">
+                <h3 id="hacking-quotes"> Parrot OS or Kali OS </h3>
+                <p id="caption"> Knows MetaSpolit ?? </p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+    </div>
+
+    <div class="accordin">
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Hacking Details 
+                </mat-panel-title>
+                <mat-panel-description>
+                  Hacking OS
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Red Hat is Dangerous
+                </mat-panel-title>
+                <mat-panel-description>
+                  Is it so {{panelOpenState ? 'open' : 'closed'}}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p> Which hacker hat are you going to be ?? </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+    </div>
+
+    <div class="footer">
+      <div class="left-footer">   
+        <img src="../../assets/footer.jpg" 
+             id="footer-image">
+        <h2 id="text"> Hacking is a Passion for all.. Hacking can Control Everything in the World </h2>
+      </div>
+      
+      <div class="right-footer">
+          <i class="fa fa-facebook-square fa-2x" 
+             id="facebook"></i>
+          <i class="fa fa-amazon fa-2x" 
+             id="amazon"></i>
+          <h2 id="contact-us"> Contact Us </h2>
+            <p id="number"> +91-1234567890 </p>
+      </div>
+    </div>
+</div>
